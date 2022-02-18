@@ -1,0 +1,40 @@
+---
+extends: default
+
+ignore: |
+  .venv/
+  .git/
+  __pycache__/
+
+rules:
+  braces:
+    max-spaces-inside: 1
+    level: error
+  brackets:
+    max-spaces-inside: 1
+    level: error
+  colons:
+    max-spaces-after: 1
+    level: error
+  commas:
+    max-spaces-after: -1
+    level: error
+  empty-lines:
+    max: 3
+    level: error
+  hyphens:
+    max-spaces-after: 1
+    level: error
+  truthy:
+    allowed-values: ['true', 'false']
+    level: error
+  comments: disable
+  comments-indentation: disable
+  indentation:
+    spaces: 2
+  key-duplicates: enable
+  line-length:
+    max: 730
+    level: warning
+  new-lines:
+    type: unix
